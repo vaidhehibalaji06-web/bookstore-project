@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2>📚 Bookstore</h2>
+        <input type="text" id="searchInput" placeholder="Search books..." />
+        <div class="menu">
+            <div class="dropdown">
+    <span>Genres ▼</span>
+    <div class="dropdown-content">
+        <a href="#" onclick="filterGenre('Fantasy')">Fantasy</a>
+        <a href="#" onclick="filterGenre('Biography')">Biography</a>
+        <a href="#" onclick="filterGenre('selfhelp')">selfhelp</a>
+        <a href="#" onclick="filterGenre('All')">All</a>
+    </div>
+</div>
+            <a href="merchandise.html">Merchandise</a>
+            <a href="offers.html">Offers</a>
+            <a href="cart.html">🛒 Cart</a>
+           <a href="login.html">👤 Login</a>
+           <a href="settings.html">⚙️ Settings</a>
+           <span id="nicknameDisplay"></span>
+           <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+    </nav>
+
+    <h1>Explore Books</h1>
+
+    <div id="books-container"></div>
+    <div id="cart-section" style="display:none;">
+    <h2>Your Cart 🛒</h2>
+    <div id="cart-items"></div>
+    <h3 id="total"></h3>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

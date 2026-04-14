@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Admin Dashboard 📊</h1>
+    <button class="logout-btn" onclick="adminLogout()">Logout</button>
+
+    <div class="admin-summary">
+        <div class="summary-box">
+            <h3>Total Users</h3>
+            <p id="totalUsers"></p>
+        </div>
+
+        <div class="summary-box">
+            <h3>Total Orders</h3>
+            <p id="totalOrders"></p>
+        </div>
+
+        <div class="summary-box">
+            <h3>Total Books in Stock</h3>
+            <p id="totalStock"></p>
+        </div>
+
+        <div class="summary-box">
+            <h3>Total Books Sold</h3>
+            <p id="totalSold"></p>
+        </div>
+    </div>
+
+    <h2>Users Table</h2>
+    <div id="usersTable"></div>
+
+    <h2>Books Table</h2>
+    <div id="booksTable"></div>
+
+    <h2>Orders Table</h2>
+    <div id="ordersTable"></div>
+
+    <h2>Order Items Table</h2>
+    <div id="orderItemsTable"></div>
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>
