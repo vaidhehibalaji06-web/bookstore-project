@@ -7,7 +7,7 @@ function adminLogin() {
         return;
     }
 
-    fetch("http://localhost:3001/admin-login", {
+    fetch("https://bookstore-backend-h124.onrender.com/admin-login", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

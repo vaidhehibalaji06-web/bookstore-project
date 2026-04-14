@@ -12,32 +12,32 @@ function adminLogout() {
 }
 
 // SUMMARY
-fetch("http://localhost:3001/admin/total-users")
+fetch("https://bookstore-backend-h124.onrender.com/admin/total-users")
     .then(res => res.json())
     .then(data => {
         document.getElementById("totalUsers").innerText = data.total_users || 0;
     });
 
-fetch("http://localhost:3001/admin/total-orders")
+fetch("https://bookstore-backend-h124.onrender.com/admin/total-orders")
     .then(res => res.json())
     .then(data => {
         document.getElementById("totalOrders").innerText = data.total_orders || 0;
     });
 
-fetch("http://localhost:3001/admin/total-stock")
+fetch("https://bookstore-backend-h124.onrender.com/admin/total-stock")
     .then(res => res.json())
     .then(data => {
         document.getElementById("totalStock").innerText = data.total_books_in_stock || 0;
     });
 
-fetch("http://localhost:3001/admin/total-sold")
+fetch("https://bookstore-backend-h124.onrender.com/admin/total-sold")
     .then(res => res.json())
     .then(data => {
         document.getElementById("totalSold").innerText = data.total_books_sold || 0;
     });
 
 // USERS TABLE
-fetch("http://localhost:3001/admin/users")
+fetch("https://bookstore-backend-h124.onrender.com/admin/users")
     .then(res => res.json())
     .then(data => {
         let html = "<table border='1'><tr><th>ID</th><th>Name</th><th>Nickname</th><th>Email</th><th>Phone</th><th>Address</th></tr>";
@@ -60,7 +60,7 @@ fetch("http://localhost:3001/admin/users")
     });
 
 // BOOKS TABLE
-fetch("http://localhost:3001/admin/books")
+fetch("https://bookstore-backend-h124.onrender.com/admin/books")
     .then(res => res.json())
     .then(data => {
         let html = "<table border='1'><tr><th>ID</th><th>Title</th><th>Author</th><th>Genre</th><th>Price</th><th>Offer Price</th><th>Stock</th><th>Sold Count</th></tr>";
@@ -85,7 +85,7 @@ fetch("http://localhost:3001/admin/books")
     });
 
 // ORDERS TABLE
-fetch("http://localhost:3001/admin/orders")
+fetch("https://bookstore-backend-h124.onrender.com/admin/orders")
     .then(res => res.json())
     .then(data => {
         let html = "<table border='1'><tr><th>ID</th><th>User ID</th><th>Total Amount</th><th>Order Date</th></tr>";
@@ -106,7 +106,7 @@ fetch("http://localhost:3001/admin/orders")
     });
 
 // ORDER ITEMS TABLE
-fetch("http://localhost:3001/admin/order-items")
+fetch("https://bookstore-backend-h124.onrender.com/admin/order-items")
     .then(res => res.json())
     .then(data => {
         let html = "<table border='1'><tr><th>ID</th><th>Order ID</th><th>Item Type</th><th>Item ID</th><th>Quantity</th><th>Price</th></tr>";

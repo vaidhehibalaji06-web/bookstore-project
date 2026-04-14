@@ -12,7 +12,7 @@ function login() {
 
     const user = { name, email, nickname, phone, address };
 
-    fetch("http://localhost:3001/users", {
+    fetch("https://bookstore-backend-h124.onrender.com/users", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

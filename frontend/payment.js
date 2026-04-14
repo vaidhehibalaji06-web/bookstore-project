@@ -33,7 +33,7 @@ function payNow() {
 
     const total_amount = items.reduce((sum, item) => sum + item.price, 0);
 
-    fetch("http://localhost:3001/orders", {
+   fetch("https://bookstore-backend-h124.onrender.com/orders", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

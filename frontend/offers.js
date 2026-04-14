@@ -1,6 +1,6 @@
 const container = document.getElementById("offers-container");
 
-fetch("http://localhost:3001/books")
+fetch("https://bookstore-backend-h124.onrender.com/books")
     .then(res => res.json())
     .then(data => {
 
